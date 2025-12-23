@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0,0,0,0.6);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 span {
+    color: #ff9800;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    animation: fadeIn 2s;
+}
+
+/* PRODUKTE */
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background: rgba(255,255,255,0.95);
+    color: black;
+    width: 220px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.4s;
+}
+
+.product:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.controls button {
+    background: #ff9800;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* SHPORTA */
+.cart-section, .checkout {
+    background: rgba(0,0,0,0.6);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* CHECKOUT */
+.checkout input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.checkout button {
+    background: green;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+}
+
+/* BORË */
+.snow::before {
+    content: "";
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-image:
+        radial-gradient(2px 2px at 20px 30px, white, transparent),
+        radial-gradient(2px 2px at 40px 70px, white, transparent),
+        radial-gradient(1px 1px at 90px 40px, white, transparent);
+    animation: snow 10s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes snow {
+    from { transform: translateY(0); }
+    to { transform: translateY(50%); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

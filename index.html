@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <title>ZalliShop – Dyqan Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- BORË -->
+<div class="snow"></div>
+
+<header>
+    <h1>Zalli<span>Shop</span></h1>
+    <div class="cart">
+        🛒 <span id="cart-count">0</span>
+    </div>
+</header>
+
+<section class="hero">
+    <h2>Mirësevini në ZalliShop</h2>
+    <p>Dyqani juaj modern online</p>
+</section>
+
+<main class="products">
+    <!-- PRODUKT -->
+    <div class="product" data-name="T-Shirt" data-price="15">
+        <img src="https://via.placeholder.com/200">
+        <h3>T‑Shirt</h3>
+        <p>15 €</p>
+        <div class="controls">
+            <button class="minus">−</button>
+            <span class="qty">0</span>
+            <button class="plus">+</button>
+        </div>
+    </div>
+
+    <div class="product" data-name="Atlete" data-price="50">
+        <img src="https://via.placeholder.com/200">
+        <h3>Atlete</h3>
+        <p>50 €</p>
+        <div class="controls">
+            <button class="minus">−</button>
+            <span class="qty">0</span>
+            <button class="plus">+</button>
+        </div>
+    </div>
+
+    <div class="product" data-name="Kapele" data-price="10">
+        <img src="https://via.placeholder.com/200">
+        <h3>Kapele</h3>
+        <p>10 €</p>
+        <div class="controls">
+            <button class="minus">−</button>
+            <span class="qty">0</span>
+            <button class="plus">+</button>
+        </div>
+    </div>
+</main>
+
+<section class="cart-section">
+    <h2>🧾 Shporta</h2>
+    <ul id="cart-list"></ul>
+    <p class="total">Totali: <span id="total">0</span> €</p>
+</section>
+
+<section class="checkout">
+    <h2>💳 Pagesa me Kartë (DEMO)</h2>
+
+    <input type="text" placeholder="Emri dhe Mbiemri" required>
+    <input type="text" placeholder="Numri i Kartës (DEMO)" required>
+    <input type="text" placeholder="MM/YY" required>
+    <input type="text" placeholder="CVV" required>
+
+    <button id="pay-btn">Paguaj (Demo)</button>
+    <p id="msg"></p>
+</section>
+
+<footer>
+    © 2025 ZalliShop • Të gjitha të drejtat e rezervuara
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
